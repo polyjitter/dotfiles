@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+# by klaatu
+# GPLv3
+
+DIR=${DIR:-$HOME/.var/app}
+CMD=${CMD:-flatpak run}
+
+launch_app() {
+    find "${DIR}" -mindepth 1 -maxdepth 1 \
+	 -type d -iname "*$1*" -printf '%f\n' \
+	| xargs $CMD
+}
+
+find_name() {
+    find "${DIR}" -mindepth 1 -maxdepth 1 \
+	 -type d -iname "*${1}*" -printf '%f\n'
+    exit
+}
+
+# parse opts
+while [ True ]; do
+if [ "$1" = "--help" -o "$1" = "-h" ]; then
+    echo " "
+    echo "$0 [OPTIONS]"
+    echo "--directory, -d   Location of flatpaks (default: $HOME/.var/app"
+    echo " "
+    exit
+elif [ "$1" = "--directory" -o "$1" = "-d" ]; then
+    DIR=$DIR
+    shift 2
+elif [ "$1" = "--resolve" -o "$1" = "-r" ]; then
+    RES=1
+    shift 1  
+else
+    break
+fi
+done
+
+# main
+if [ "$RES" == 1 ]; then
+    find_name "${1}"
+else
+    launch_app "${1}"
+fi

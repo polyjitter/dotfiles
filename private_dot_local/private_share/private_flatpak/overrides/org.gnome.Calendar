@@ -1,0 +1,5 @@
+[Context]
+filesystems=!~/.local/share/themes
+
+[Environment]
+GTK_THEME=adw-gtk3

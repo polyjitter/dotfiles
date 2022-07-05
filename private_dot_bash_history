@@ -1,0 +1,145 @@
+clear
+rpm-ostree install openssl
+cd Downloads
+ls
+./mutter-42.1-2.fc36.x86_64.rpm
+rpm-ostree override remove mutter --install ./mutter-42.1-2.fc36.x86_64.rpm
+rpm-ostree override replace mutter ./mutter-42.1-2.fc36.x86_64.rpm
+rpm-ostree override replace ./mutter-42.1-2.fc36.x86_64.rpm
+systemctl reboot
+clear
+dnf install meson
+sudo dnf install meson
+sudo dnf install git vala gobject-introspection-devel sassc meson gtk4-devel cmake ninja-build
+meson . _build
+ninja -C _build
+exit
+systemctl shutdown now
+systemctl shutdown
+systemctl poweroff
+shutdown
+exit
+mkdir .usertweaks
+cd .usertweaks/
+git clone https://github.com/rafaelmardojai/firefox-gnome-theme && cd firefox-gnome-theme
+./scripts/auto-install.sh 
+gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3' && gsettings set org.gnome.desktop.interface color-scheme 'default'
+flatpak install org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
+cd ..
+git clone https://gitlab.gnome.org/GNOME/libadwaita.git
+cd libadwaita/
+meson . _build
+toolbox create
+toolbox enter
+toolbox remove
+toolbox --help
+toolbox rm
+toolbox rm fedora-toolbox-36
+toolbox list
+toolbox enter
+toolbox help
+toolbox rm fedora-toolbox-36 --force
+rpm
+rpm search kgx
+rpm-ostree 
+rpm-ostree install kgx
+rpm-ostree install starship
+curl -L git.io/antigen > antigen.zsh
+rpm-ostree install zsh
+rpm-ostree install fish
+systemctl reboot
+fish
+dnf install ninja-build meson sassc
+sudo dnf install ninja-build meson sassc
+meson build
+DESTDIR=/home/kaestral/.local/share/themes ninja -C build install
+DESTDIR=/home/kaestral/build ninja -C build install
+mkdir ~/build
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita' && gsettings set org.gnome.desktop.interface color-scheme 'default'
+exit
+flatpak run org.gnome.Calendar --env=GTK_THEME=adw-gtk3
+flatpak override org.gnome.Calendar --env=GTK_THEME=adw-gtk3
+cd .usertweaks/
+git clone https://github.com/lassekongo83/adw-gtk3.git
+cd adw-gtk3/
+meson build
+toolbox create tweaking
+toolbox enter
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita' && gsettings set org.gnome.desktop.interface color-scheme 'default'
+flatpak install org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
+flatpak remove org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
+toolbox enterflatpak install org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
+flatpak install org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
+gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3' && gsettings set org.gnome.desktop.interface color-scheme 'default'
+rpm-ostree install gnome-tweak-tool
+systemctl reboot
+flatpak remote-add --user --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+chsh
+[200~flatpak install --user gnome-nightly org.gnome.Sdk org.gnome.Platform
+~
+flatpak install --user gnome-nightly org.gnome.Sdk org.gnome.Platform
+flatpak install --user gnome-nightly org.gnome.Fractal.Devel
+fish
+xit
+exit
+rpm-ostree install mozilla-openh264
+cd .usertweaks/
+flatpak
+exit
+dnf install node
+sudo dnf install node
+sudo dnf install nodejs
+npm i
+sudo npm run plug
+exit
+cd powercord/
+sudo npm run plug
+npm run plug
+sudo npm run plug
+flatpak uninstall
+exit
+cd .usertweaks/powercord/
+sudo npm run plug
+flatpak override com.discord.Discord --env=GTK_THEME=adw-gtk3-dark
+exit
+dnf install fzf fish fd-find bat starship
+sudo dnf install fzf fish fd-find bat starship
+clear
+ls
+fish
+exit
+fish
+exit
+fish
+echo $(bash /var/run/.containerenv; echo {$name}: {$DISTTAG})
+exit
+fish
+exit
+clear
+usermod -s /bin/fish $USERNAME
+usermod -s /bin/fish kaestral
+usermod -s /bin/fish $USERNAME
+clear
+exit
+clear
+exit
+dnf install fish
+sudo dnf install fish
+sudo dnf install fzf fd-find bat
+exit
+podman
+podman
+podman
+podman
+podman
+podman
+toolbox
+help
+ls
+cd /
+ls
+/bin/fish
+/bin/podman
+flatpak-spawn
+flatpak-spawn --host toolbox enter
+fish

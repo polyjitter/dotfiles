@@ -1,0 +1,6 @@
+format = """$directory$character"""
+right_format = """$all$hostname """
+
+[hostname]
+ssh_only = false
+format = "on [$ssh_symbol$hostname]($style)"

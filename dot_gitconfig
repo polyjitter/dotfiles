@@ -1,0 +1,5 @@
+[core]
+	editor = flatpak run --file-forwarding re.sonny.Commit @@
+[user]
+	email = polyjitter@fastmail.com
+	name = Adriene Kae

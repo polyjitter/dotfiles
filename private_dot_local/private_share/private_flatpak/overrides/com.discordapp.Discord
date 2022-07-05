@@ -1,0 +1,5 @@
+[Context]
+filesystems=~/.usertweaks/powercord
+
+[Environment]
+GTK_THEME=adw-gtk3-dark

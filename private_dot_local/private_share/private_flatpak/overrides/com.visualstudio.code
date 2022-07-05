@@ -1,0 +1,6 @@
+[Context]
+devices=shm;kvm
+filesystems=/bin/podman;/var;/bin;home;host-etc;host-os
+
+[System Bus Policy]
+org.freedesktop.Flatpak=talk

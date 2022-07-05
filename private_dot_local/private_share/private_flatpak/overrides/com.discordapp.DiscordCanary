@@ -1,0 +1,5 @@
+[Context]
+filesystems=!~/.local/share/themes;!~/.themes;~/.usertweaks/powercord;~/.themes/adw-gtk3-dark
+
+[Environment]
+GTK_THEME=adw-gtk3-dark
