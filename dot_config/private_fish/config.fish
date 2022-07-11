@@ -3,8 +3,8 @@ if status is-interactive
 end
 
 # Fish Variables
-set fish_greeting
 set fish_escape_delay_ms 300
+set fish_greeting
 
 # Other Variables
 set -x FZF_DEFAULT_OPTS "--layout=reverse --inline-info --height=80% --border"
@@ -21,6 +21,10 @@ end
 function commit -d "Add all to a git repository and commit."
     git add -A
     git commit
+end
+
+function gbug -d "Open an application with the GTK debugger active."
+    GTK_DEBUG=interactive $argv
 end
 
 # Starship

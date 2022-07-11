@@ -1,4 +1,5 @@
 [Context]
+devices=dri
 filesystems=~/.usertweaks/powercord
 
 [Environment]

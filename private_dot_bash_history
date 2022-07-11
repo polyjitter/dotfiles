@@ -143,3 +143,48 @@ ls
 flatpak-spawn
 flatpak-spawn --host toolbox enter
 fish
+chezmoi apply
+sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply
+sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply polyjitter
+ls
+ls -a
+chezmoi update
+chezmoi cd
+git pull
+git branch --set-upstream-to=polyjitter/dotfiles master
+git branch --set-upstream-to=polyjitter/dotfiles
+git brannch --all
+git branch --all
+git remote add https://github.com/polyjitter/dotfiles
+git remote add origin https://github.com/polyjitter/dotfiles
+git branch --set-upstream-to=polyjitter/dotfiles master
+git pull
+git branch --set-upstream-to=polyjitter/dotfiles master
+git pull origin master
+git branch --set-upstream-to=polyjitter/dotfiles master
+git fetch master
+git fetch
+chezmoi update
+cd ..
+cd ~
+sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply polyjitter
+chezmoi help
+chezmoi update
+git apply
+ls -a
+cd .config/fish/
+ls
+cd ~
+clear
+cd ~/Downloads
+sudo gedit
+sudo nano /etc/passwd
+systemctl restart
+systemctl reboot
+chsh fish
+sudo ./tools/update-extension-user.sh 
+sudo ./tools/update-extension-user.sh install
+exit
+dnf install fish
+sudo dnf install fish
+exit

@@ -3,3 +3,5 @@
 [user]
 	email = polyjitter@fastmail.com
 	name = Adriene Kae
+[credential]
+	helper = store
